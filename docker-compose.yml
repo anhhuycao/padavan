@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  padavan:
+    image: padavan
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: padavan
+    volumes:
+      - ./padavan-4.4:/home/padavan-4.4
